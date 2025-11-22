@@ -1,0 +1,763 @@
+[
+  {
+    "id": "01",
+    "title": "Skateboard Shoe",
+    "desc": "Ratione, inventore ea unde tempora perspiciatis illo sit non iure deleniti maiores rerum odit enim temporibus veritatis maxime eum numquam aperiam consectetur fugit voluptate esse earum ab adipisci nesciunt.",
+    "price": 233,
+    "Dprice": 133,
+    "rating": 4.3,
+    "catagori": "Headphone",
+    "stock": "In stock",
+    "image": "/products/laptop1.png",
+    "reviews": {
+      "img": "https://www.theladders.com/wp-content/uploads/man_outside_091318.jpg",
+      "name": "Harry Potter",
+      "city": "London",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "30 Apr, 2025",
+      "massage": "Excellent sound and very comfortable to wear for long hours."
+    }
+  },
+  {
+    "id": "02",
+    "title": "Wireless Earbuds",
+    "desc": "Compact and powerful earbuds with superior sound quality and noise cancellation.",
+    "price": 150,
+    "Dprice": 99,
+    "rating": 4.7,
+    "catagori": "Earphone",
+    "stock": "In stock",
+    "image": "/products/earbuds1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/44.jpg",
+      "name": "Emma Watson",
+      "city": "Paris",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "12 May, 2025",
+      "massage": "Clear bass and sleek design. Worth the price!"
+    }
+  },
+  {
+    "id": "03",
+    "title": "Gaming Headset",
+    "desc": "Immersive 7.1 surround sound gaming headset with soft cushions and mic.",
+    "price": 180,
+    "Dprice": 120,
+    "rating": 4.6,
+    "catagori": "Headset",
+    "stock": "In stock",
+    "image": "/products/headset2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/33.jpg",
+      "name": "John Smith",
+      "city": "New York",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "20 Jun, 2025",
+      "massage": "Perfect for gaming, mic quality is crystal clear!"
+    }
+  },
+  {
+    "id": "04",
+    "title": "Bluetooth Speaker",
+    "desc": "Portable Bluetooth speaker with rich sound and long battery life.",
+    "price": 99,
+    "Dprice": 70,
+    "rating": 4.4,
+    "catagori": "Speaker",
+    "stock": "In stock",
+    "image": "/products/speaker1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/55.jpg",
+      "name": "Sophia Lee",
+      "city": "Seoul",
+      "rating": "⭐⭐⭐⭐",
+      "data": "10 Mar, 2025",
+      "massage": "Loud and clear sound. Battery lasts almost 8 hours."
+    }
+  },
+  {
+    "id": "05",
+    "title": "Smart Watch",
+    "desc": "Track your fitness and stay connected with this smart wearable.",
+    "price": 210,
+    "Dprice": 160,
+    "rating": 4.5,
+    "catagori": "Watch",
+    "stock": "In stock",
+    "image": "/products/watch1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/77.jpg",
+      "name": "Michael Chen",
+      "city": "Beijing",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "5 Jan, 2025",
+      "massage": "Love the health tracking features and sleek design."
+    }
+  },
+  {
+    "id": "06",
+    "title": "Mechanical Keyboard",
+    "desc": "RGB backlit mechanical keyboard with tactile switches.",
+    "price": 130,
+    "Dprice": 95,
+    "rating": 4.8,
+    "catagori": "Keyboard",
+    "stock": "In stock",
+    "image": "/products/keyboard1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/9.jpg",
+      "name": "David Miller",
+      "city": "Toronto",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "28 Feb, 2025",
+      "massage": "Clicky keys and bright RGB. Perfect for coding and gaming!"
+    }
+  },
+  {
+    "id": "07",
+    "title": "Wireless Mouse",
+    "desc": "Ergonomic design with smooth tracking and long battery life.",
+    "price": 75,
+    "Dprice": 49,
+    "rating": 4.3,
+    "catagori": "Mouse",
+    "stock": "In stock",
+    "image": "/products/mouse1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/88.jpg",
+      "name": "Isabella Brown",
+      "city": "Sydney",
+      "rating": "⭐⭐⭐⭐",
+      "data": "15 Apr, 2025",
+      "massage": "Comfortable grip and responsive click!"
+    }
+  },
+  {
+    "id": "08",
+    "title": "Laptop Stand",
+    "desc": "Adjustable aluminum laptop stand for better posture and cooling.",
+    "price": 60,
+    "Dprice": 40,
+    "rating": 4.2,
+    "catagori": "Accessory",
+    "stock": "In stock",
+    "image": "/products/stand1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/10.jpg",
+      "name": "Chris Evans",
+      "city": "Los Angeles",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "25 May, 2025",
+      "massage": "Very sturdy and perfect height for working!"
+    }
+  },
+  {
+    "id": "09",
+    "title": "LED Monitor",
+    "desc": "Full HD LED display with vibrant colors and thin bezel.",
+    "price": 320,
+    "Dprice": 250,
+    "rating": 4.7,
+    "catagori": "Monitor",
+    "stock": "In stock",
+    "image": "/products/monitor1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/62.jpg",
+      "name": "Luna Davis",
+      "city": "Berlin",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "7 Mar, 2025",
+      "massage": "Bright and crisp display, works perfectly for design work!"
+    }
+  },
+  {
+    "id": "10",
+    "title": "Portable SSD",
+    "desc": "High-speed portable SSD with 1TB storage capacity.",
+    "price": 190,
+    "Dprice": 150,
+    "rating": 4.9,
+    "catagori": "Storage",
+    "stock": "In stock",
+    "image": "/products/ssd1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/45.jpg",
+      "name": "Robert Wilson",
+      "city": "New York",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "18 Jun, 2025",
+      "massage": "Super fast transfer speed! Totally worth it."
+    }
+  },
+  {
+    "id": "11",
+    "title": "Smartphone",
+    "desc": "Next-gen smartphone with 5G and AI-enhanced camera system.",
+    "price": 999,
+    "Dprice": 899,
+    "rating": 4.8,
+    "catagori": "Phone",
+    "stock": "In stock",
+    "image": "/products/phone1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/32.jpg",
+      "name": "Amelia Moore",
+      "city": "Tokyo",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "1 Feb, 2025",
+      "massage": "Camera quality is stunning. Battery lasts all day."
+    }
+  },
+  {
+    "id": "12",
+    "title": "Tablet Pro",
+    "desc": "Powerful tablet with pen support and large retina display.",
+    "price": 650,
+    "Dprice": 580,
+    "rating": 4.6,
+    "catagori": "Tablet",
+    "stock": "In stock",
+    "image": "/products/tablet1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/80.jpg",
+      "name": "Oliver Scott",
+      "city": "Madrid",
+      "rating": "⭐⭐⭐⭐",
+      "data": "22 Jan, 2025",
+      "massage": "Very responsive and perfect for digital drawing."
+    }
+  },
+  {
+    "id": "13",
+    "title": "Drone Camera",
+    "desc": "HD drone camera with auto-stabilization and 4K recording.",
+    "price": 499,
+    "Dprice": 399,
+    "rating": 4.5,
+    "catagori": "Gadget",
+    "stock": "In stock",
+    "image": "/products/drone1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/50.jpg",
+      "name": "Mark Taylor",
+      "city": "California",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "12 Mar, 2025",
+      "massage": "Amazing flight stability and camera clarity!"
+    }
+  },
+  {
+    "id": "14",
+    "title": "VR Headset",
+    "desc": "Immersive VR headset for gaming and 3D experiences.",
+    "price": 420,
+    "Dprice": 350,
+    "rating": 4.4,
+    "catagori": "VR",
+    "stock": "In stock",
+    "image": "/products/vr1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/91.jpg",
+      "name": "Chloe Anderson",
+      "city": "Singapore",
+      "rating": "⭐⭐⭐⭐",
+      "data": "18 May, 2025",
+      "massage": "The visuals are super realistic. Love it!"
+    }
+  },
+  {
+    "id": "15",
+    "title": "Digital Camera",
+    "desc": "Professional DSLR camera with interchangeable lens.",
+    "price": 850,
+    "Dprice": 730,
+    "rating": 4.7,
+    "catagori": "Camera",
+    "stock": "In stock",
+    "image": "/products/camera1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/25.jpg",
+      "name": "Liam Johnson",
+      "city": "Oslo",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "2 Apr, 2025",
+      "massage": "Sharp photos and great battery backup!"
+    }
+  },
+  {
+    "id": "16",
+    "title": "Tripod Stand",
+    "desc": "Lightweight and durable tripod for cameras and phones.",
+    "price": 60,
+    "Dprice": 40,
+    "rating": 4.3,
+    "catagori": "Accessory",
+    "stock": "In stock",
+    "image": "/products/tripod1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/30.jpg",
+      "name": "Ava Collins",
+      "city": "Rome",
+      "rating": "⭐⭐⭐⭐",
+      "data": "25 Jun, 2025",
+      "massage": "Compact, sturdy, and easy to carry!"
+    }
+  },
+  {
+    "id": "17",
+    "title": "Microphone Pro",
+    "desc": "Studio-quality microphone for recording and streaming.",
+    "price": 180,
+    "Dprice": 120,
+    "rating": 4.8,
+    "catagori": "Audio",
+    "stock": "In stock",
+    "image": "/products/mic1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/11.jpg",
+      "name": "Jack Wilson",
+      "city": "Chicago",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "8 Jul, 2025",
+      "massage": "Crystal clear sound and no background noise."
+    }
+  },
+  {
+    "id": "18",
+    "title": "Power Bank",
+    "desc": "20000mAh fast charging power bank with dual USB ports.",
+    "price": 65,
+    "Dprice": 50,
+    "rating": 4.4,
+    "catagori": "Gadget",
+    "stock": "In stock",
+    "image": "/products/powerbank1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/42.jpg",
+      "name": "Ella Thompson",
+      "city": "Delhi",
+      "rating": "⭐⭐⭐⭐",
+      "data": "3 Aug, 2025",
+      "massage": "Charges phone multiple times easily!"
+    }
+  },
+  {
+    "id": "19",
+    "title": "Wireless Charger",
+    "desc": "Fast wireless charging pad compatible with all Qi devices.",
+    "price": 45,
+    "Dprice": 30,
+    "rating": 4.1,
+    "catagori": "Charger",
+    "stock": "In stock",
+    "image": "/products/charger1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/92.jpg",
+      "name": "Ethan Carter",
+      "city": "Dubai",
+      "rating": "⭐⭐⭐",
+      "data": "17 Apr, 2025",
+      "massage": "Decent speed but needs perfect placement."
+    }
+  },
+  {
+    "id": "20",
+    "title": "USB-C Hub",
+    "desc": "7-in-1 USB-C Hub with HDMI, SD, and Type-A ports.",
+    "price": 80,
+    "Dprice": 55,
+    "rating": 4.5,
+    "catagori": "Accessory",
+    "stock": "In stock",
+    "image": "/products/hub1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/64.jpg",
+      "name": "Grace Martin",
+      "city": "Amsterdam",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "30 Sep, 2025",
+      "massage": "Perfect for connecting multiple devices at once!"
+    }
+  },
+  {
+    "id": "21",
+    "title": "Gaming Chair",
+    "desc": "Ergonomic gaming chair with adjustable height and lumbar support.",
+    "price": 320,
+    "Dprice": 280,
+    "rating": 4.7,
+    "catagori": "Chair",
+    "stock": "In stock",
+    "image": "/products/chair1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/1.jpg",
+      "name": "Liam Smith",
+      "city": "London",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "12 Jan, 2025",
+      "massage": "Super comfortable and perfect for long gaming sessions."
+    }
+  },
+  {
+    "id": "22",
+    "title": "Smart Lamp",
+    "desc": "Smart lamp with adjustable brightness and color temperature.",
+    "price": 70,
+    "Dprice": 55,
+    "rating": 4.4,
+    "catagori": "Gadget",
+    "stock": "In stock",
+    "image": "/products/lamp1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/2.jpg",
+      "name": "Emma Johnson",
+      "city": "Paris",
+      "rating": "⭐⭐⭐⭐",
+      "data": "20 Feb, 2025",
+      "massage": "Nice design and easy to control with app."
+    }
+  },
+  {
+    "id": "23",
+    "title": "Fitness Tracker",
+    "desc": "Track your workouts and heart rate with this stylish tracker.",
+    "price": 120,
+    "Dprice": 95,
+    "rating": 4.6,
+    "catagori": "Wearable",
+    "stock": "In stock",
+    "image": "/products/tracker1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/3.jpg",
+      "name": "Noah Brown",
+      "city": "New York",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "5 Mar, 2025",
+      "massage": "Lightweight, accurate, and looks great on wrist."
+    }
+  },
+  {
+    "id": "24",
+    "title": "Laptop Backpack",
+    "desc": "Durable backpack with multiple compartments for laptop and accessories.",
+    "price": 85,
+    "Dprice": 65,
+    "rating": 4.3,
+    "catagori": "Bag",
+    "stock": "In stock",
+    "image": "/products/backpack1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/4.jpg",
+      "name": "Olivia Davis",
+      "city": "Berlin",
+      "rating": "⭐⭐⭐⭐",
+      "data": "10 Apr, 2025",
+      "massage": "Spacious, strong zippers, comfortable straps."
+    }
+  },
+  {
+    "id": "25",
+    "title": "Noise Cancelling Headphones",
+    "desc": "Over-ear headphones with active noise cancellation and long battery life.",
+    "price": 250,
+    "Dprice": 200,
+    "rating": 4.8,
+    "catagori": "Headphone",
+    "stock": "In stock",
+    "image": "/products/headphone2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/5.jpg",
+      "name": "Ethan Miller",
+      "city": "Chicago",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "18 May, 2025",
+      "massage": "Amazing sound and very effective noise cancellation!"
+    }
+  },
+  {
+    "id": "26",
+    "title": "4K Action Camera",
+    "desc": "Capture adventures with stunning 4K resolution and waterproof design.",
+    "price": 320,
+    "Dprice": 280,
+    "rating": 4.7,
+    "catagori": "Camera",
+    "stock": "In stock",
+    "image": "/products/actioncam1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/6.jpg",
+      "name": "Sophia Wilson",
+      "city": "Sydney",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "25 Jun, 2025",
+      "massage": "Durable and excellent video quality in all conditions."
+    }
+  },
+  {
+    "id": "27",
+    "title": "Wireless Gaming Mouse",
+    "desc": "High precision gaming mouse with customizable buttons.",
+    "price": 90,
+    "Dprice": 70,
+    "rating": 4.6,
+    "catagori": "Mouse",
+    "stock": "In stock",
+    "image": "/products/mouse2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/7.jpg",
+      "name": "Mason Anderson",
+      "city": "Toronto",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "2 Jul, 2025",
+      "massage": "Very responsive, great grip, and easy customization."
+    }
+  },
+  {
+    "id": "28",
+    "title": "Mechanical Keyboard Pro",
+    "desc": "RGB mechanical keyboard with tactile feedback switches.",
+    "price": 150,
+    "Dprice": 120,
+    "rating": 4.9,
+    "catagori": "Keyboard",
+    "stock": "In stock",
+    "image": "/products/keyboard2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/8.jpg",
+      "name": "Ava Thomas",
+      "city": "Rome",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "15 Jul, 2025",
+      "massage": "Super clicky and satisfying keys, perfect for gaming."
+    }
+  },
+  {
+    "id": "29",
+    "title": "Smart Thermostat",
+    "desc": "Control home temperature from your phone with this smart thermostat.",
+    "price": 120,
+    "Dprice": 95,
+    "rating": 4.4,
+    "catagori": "Gadget",
+    "stock": "In stock",
+    "image": "/products/thermostat1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/9.jpg",
+      "name": "Lucas White",
+      "city": "Amsterdam",
+      "rating": "⭐⭐⭐⭐",
+      "data": "28 Jul, 2025",
+      "massage": "Easy to install and works perfectly with my home system."
+    }
+  },
+  {
+    "id": "30",
+    "title": "Portable Projector",
+    "desc": "Mini projector with HD resolution and built-in speaker.",
+    "price": 180,
+    "Dprice": 150,
+    "rating": 4.5,
+    "catagori": "Gadget",
+    "stock": "In stock",
+    "image": "/products/projector1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/10.jpg",
+      "name": "Charlotte Harris",
+      "city": "Madrid",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "5 Aug, 2025",
+      "massage": "Compact, bright, and easy to set up."
+    }
+  },
+  {
+    "id": "31",
+    "title": "Smart Glasses",
+    "desc": "AR-enabled glasses with notifications and activity tracking.",
+    "price": 250,
+    "Dprice": 210,
+    "rating": 4.3,
+    "catagori": "Wearable",
+    "stock": "In stock",
+    "image": "/products/glasses1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/11.jpg",
+      "name": "Henry Martin",
+      "city": "Berlin",
+      "rating": "⭐⭐⭐⭐",
+      "data": "12 Aug, 2025",
+      "massage": "Stylish and functional, good for everyday use."
+    }
+  },
+  {
+    "id": "32",
+    "title": "Bluetooth Car Speaker",
+    "desc": "Compact car speaker with Bluetooth and high-quality audio.",
+    "price": 90,
+    "Dprice": 70,
+    "rating": 4.6,
+    "catagori": "Speaker",
+    "stock": "In stock",
+    "image": "/products/carspeaker1.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/12.jpg",
+      "name": "Mia Lewis",
+      "city": "Tokyo",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "18 Sep, 2025",
+      "massage": "Loud and clear sound, easy to connect."
+    }
+  },
+  {
+    "id": "33",
+    "title": "Foldable Drone",
+    "desc": "Lightweight foldable drone with HD camera and auto-stabilization.",
+    "price": 400,
+    "Dprice": 350,
+    "rating": 4.7,
+    "catagori": "Drone",
+    "stock": "In stock",
+    "image": "/products/drone2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/13.jpg",
+      "name": "Jack Robinson",
+      "city": "Dubai",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "25 Sep, 2025",
+      "massage": "Easy to fly and camera quality is very clear."
+    }
+  },
+  {
+    "id": "34",
+    "title": "VR Headset Pro",
+    "desc": "High resolution VR headset for immersive 3D experiences.",
+    "price": 500,
+    "Dprice": 450,
+    "rating": 4.8,
+    "catagori": "VR",
+    "stock": "In stock",
+    "image": "/products/vr2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/14.jpg",
+      "name": "Amelia Walker",
+      "city": "Singapore",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "2 Oct, 2025",
+      "massage": "Best VR headset I have ever used, very immersive."
+    }
+  },
+  {
+    "id": "35",
+    "title": "Professional Tripod",
+    "desc": "Heavy-duty tripod for photography and video production.",
+    "price": 120,
+    "Dprice": 100,
+    "rating": 4.5,
+    "catagori": "Accessory",
+    "stock": "In stock",
+    "image": "/products/tripod2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/15.jpg",
+      "name": "William Hall",
+      "city": "Los Angeles",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "10 Oct, 2025",
+      "massage": "Strong, adjustable, and perfect for professional use."
+    }
+  },
+  {
+    "id": "36",
+    "title": "Studio Microphone",
+    "desc": "Condenser microphone for professional recording and streaming.",
+    "price": 200,
+    "Dprice": 160,
+    "rating": 4.6,
+    "catagori": "Audio",
+    "stock": "In stock",
+    "image": "/products/mic2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/16.jpg",
+      "name": "Sophia King",
+      "city": "Rome",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "18 Oct, 2025",
+      "massage": "Clear sound and great quality for streaming and recording."
+    }
+  },
+  {
+    "id": "37",
+    "title": "Portable Power Bank Pro",
+    "desc": "30000mAh power bank with fast charging and dual ports.",
+    "price": 90,
+    "Dprice": 70,
+    "rating": 4.5,
+    "catagori": "Gadget",
+    "stock": "In stock",
+    "image": "/products/powerbank2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/17.jpg",
+      "name": "James Scott",
+      "city": "Toronto",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "25 Oct, 2025",
+      "massage": "Charges my devices multiple times quickly. Very handy!"
+    }
+  },
+  {
+    "id": "38",
+    "title": "Wireless Charger Pro",
+    "desc": "Fast wireless charging pad with sleek design for Qi devices.",
+    "price": 55,
+    "Dprice": 40,
+    "rating": 4.4,
+    "catagori": "Charger",
+    "stock": "In stock",
+    "image": "/products/charger2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/18.jpg",
+      "name": "Charlotte Lewis",
+      "city": "Amsterdam",
+      "rating": "⭐⭐⭐⭐",
+      "data": "30 Oct, 2025",
+      "massage": "Charges fast and looks good on my desk."
+    }
+  },
+  {
+    "id": "39",
+    "title": "USB-C Hub Pro",
+    "desc": "8-in-1 USB-C Hub with HDMI, SD, and Type-A ports.",
+    "price": 95,
+    "Dprice": 75,
+    "rating": 4.6,
+    "catagori": "Accessory",
+    "stock": "In stock",
+    "image": "/products/hub2.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/men/19.jpg",
+      "name": "Henry Adams",
+      "city": "Barcelona",
+      "rating": "⭐⭐⭐⭐⭐",
+      "data": "2 Nov, 2025",
+      "massage": "Perfect for connecting multiple devices at once."
+    }
+  },
+  {
+    "id": "40",
+    "title": "LED Desk Lamp",
+    "desc": "Adjustable LED desk lamp with brightness control.",
+    "price": 50,
+    "Dprice": 35,
+    "rating": 4.3,
+    "catagori": "Gadget",
+    "stock": "In stock",
+    "image": "/products/desk-lamp.png",
+    "reviews": {
+      "img": "https://randomuser.me/api/portraits/women/20.jpg",
+      "name": "Mia Thomas",
+      "city": "Lisbon",
+      "rating": "⭐⭐⭐⭐",
+      "data": "10 Nov, 2025",
+      "massage": "Bright enough and easy to adjust. Looks stylish."
+    }
+  }
+]
+

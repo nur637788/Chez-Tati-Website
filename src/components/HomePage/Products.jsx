@@ -1,0 +1,91 @@
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+function Products({ addToFavorite }) {
+  const [products, setProducts] = useState([]);
+  const [favorites, setFavorites] = useState([]);
+  const navigate = useNavigate();
+
+  const handleFavoriteClick = (e, pro) => {
+    e.stopPropagation();
+    if (favorites.includes(pro.id)) {
+      setFavorites(favorites.filter((id) => id !== pro.id));
+    } else {
+      setFavorites([...favorites, pro.id]);
+      addToFavorite && addToFavorite(pro);
+    }
+  };
+
+  //  JSON data 
+  useEffect(() => {
+    fetch("https://dummyjson.com/products?limit=194")
+      .then((res) => res.json())
+      .then((data) => setProducts(data.products.slice(180, 194)))
+      .catch((err) => console.error("Error loading JSON:", err));
+  }, []);
+  if (!products || products.length == 0)
+    return <p className="text-center text-red-700 mt-10 ">Loading...</p>;
+
+  return (
+    <section className="">
+      <div className="flex justify-between items-center">
+        <h4 className="text-2xl font-bold">Products</h4>
+        <div className="flex gap-1 md:gap-3">
+          <Link to='/newProducts'>
+            <button className="border px-4 py-1 rounded-full md:text-sm text-[8px] hover:shadow-lg hover:scale-95 transition duration-300 cursor-pointer">
+              New Product
+            </button>
+          </Link>
+          <Link to='/discount'>
+            <button className="border px-4 py-1 rounded-full md:text-sm text-[8px] hover:shadow-lg hover:scale-95 transition duration-300 cursor-pointer">
+              Discount
+            </button>
+          </Link>
+          <Link to='/popular'>
+            <button className="border px-4 py-1 rounded-full md:text-sm text-[8px] hover:shadow-lg hover:scale-95 transition duration-300 cursor-pointer">
+              Popular
+            </button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Product Grid Area */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mt-3">
+        {products.map((pro) => (
+          <div
+            key={pro.id}
+            className="bg-gray-100 rounded-2xl border border-gray-300 cursor-pointer hover:shadow-lg hover:-translate-y-1 transition duration-300"
+            onClick={() => navigate(`/product/${pro.id}`)}>
+            <div className="w-full">
+              <img className="w-full h-full object-cover rounded-t-2xl"
+                src={pro.thumbnail} alt={pro.title} />
+            </div>
+
+            <div className="p-2">
+              <p>{pro.title.slice(0, 15)}</p>
+              <div className="flex justify-between items-center">
+                <p>${pro.price}</p>
+
+                {/* ❤️ Favorite Button */}
+                <button onClick={(e) => handleFavoriteClick(e, pro)}
+                  style={{
+                    fontSize: "22px",
+                    cursor: "pointer",
+                    color: favorites.includes(pro.id) ? "black" : "red",
+                    background: "transparent",
+                    border: "none",
+                    transition: "0.3s"
+                  }}>
+                  <img className="w-5 h-5" src="/icons/love-icon.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </section>
+  );
+}
+
+export default Products;
