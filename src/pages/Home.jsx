@@ -19,14 +19,14 @@ function Home() {
           <div className='text-center space-y-3'>
             <img className='m-auto' src="/images/hero-image2.png" alt="hero-image2" />
             <h3>Electronics Gadgets</h3>
-            <button className='border border-[#FC5A31] text-[#FC5A31] px-5 py-1 rounded-full cursor-pointer'>Shop Now ›</button>
+            <Link to='/allproducts' className='border border-[#FC5A31] text-[#FC5A31] px-5 py-1 rounded-full cursor-pointer hover:scale-105 duration-300'> Shop Now ›</Link>
           </div>
         </div>
 
         <Products />
         <CoustomerCard />
       </div>
-    </header>
+    </header >
   )
 }
 

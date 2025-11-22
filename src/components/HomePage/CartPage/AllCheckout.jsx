@@ -154,7 +154,7 @@ export default function AllCheckout() {
 
                 <button
                     type="submit"
-                    className="w-full bg-blue-600 text-white py-2 rounded font-semibold">
+                    className="w-full bg-[#EA5326] hover:bg-amber-700 text-white py-2 rounded-full font-semibold cursor-pointer">
                     Confirm Order
                 </button>
             </form>

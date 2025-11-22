@@ -91,7 +91,7 @@ export default function ProductDetails() {
           <p className="text-gray-700 mt-4 leading-6">{product.description}</p>
 
           {/* Buttons */}
-          <div className="flex gap-5 mt-6">
+          <div className="flex gap-4 mt-6">
             {/* quantity Plus Minus buttons */}
             <div className="flex items-center gap-3 bg-gray-100 px-2 rounded-full border border-gray-300">
               <button
@@ -109,7 +109,7 @@ export default function ProductDetails() {
               </button>
             </div>
 
-            <Link to='/allcheckout' className="bg-amber-600 text-white px-10 py-2 rounded-full hover:bg-amber-700 hover:scale-95 duration-300">
+            <Link to='/allcheckout' className="bg-[#EA5326] text-white px-10 py-2 rounded-full hover:bg-amber-700 hover:scale-95 duration-300">
               Checkout
             </Link>
 

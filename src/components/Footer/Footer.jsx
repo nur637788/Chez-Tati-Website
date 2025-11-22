@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineApple } from 'react-icons/ai';
 import { BsQrCode } from 'react-icons/bs';
 import { FaFacebook, FaGooglePlay, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Footer() {
     const navigate = useNavigate();
@@ -14,7 +14,7 @@ function Footer() {
         setEmail("")
     }
     return (
-        <footer className='bg-gray-900 text-white'>
+        <footer className='bg-gray-900 text-gray-300'>
             <div data-aos='fade-up' className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4  justify-between px-5 md:px-20 py-5 space-x-5'>
                 {/* Company Logo */}
                 <div className='space-y-1'>
@@ -33,25 +33,25 @@ function Footer() {
 
                 {/* Social Link */}
                 <div className='flex flex-col space-y-1'>
-                    <h3 className='text-xl font-bold'>Account</h3>
-                    <a className='hover:text-blue-600' href="">My Account</a>
-                    <a className='hover:text-blue-600' href="">Login/Register</a>
-                    <a className='hover:text-blue-600' href="">Cart</a>
-                    <a className='hover:text-blue-600' href="">Shop</a>
+                    <h3 className='text-xl font-bold text-white'>Account</h3>
+                    <Link to="/editprofile" className='hover:text-blue-600' >My Account</Link>
+                    <Link to="/register" className='hover:text-blue-600' >Register</Link>
+                    <Link to="/favorite" className='hover:text-blue-600' >Favorite</Link>
+                    <Link to="/cart" className='hover:text-blue-600' >Cart</Link>
                 </div>
 
                 {/* Privacy policy Link Button*/}
                 <div className='flex flex-col items-start space-y-1'>
-                    <h3 className='text-xl font-bold'>Quick Links</h3>
+                    <h3 className='text-xl font-bold text-white'>Quick Links</h3>
                     <button onClick={() => navigate('/privacypolicy')} className='cursor-pointer hover:text-blue-600'>Privacy Policy</button>
                     <button onClick={() => navigate('/termcondition')} className='cursor-pointer hover:text-blue-600'>Terms & Condition</button>
-                    <button onClick={() => navigate('/termcondition')} className='cursor-pointer hover:text-blue-600'>FAQs</button>
-                    <button onClick={() => navigate('/termcondition')} className='cursor-pointer hover:text-blue-600'>Contact</button>
+                    <button onClick={() => navigate('/faqs')} className='cursor-pointer hover:text-blue-600'>FAQs</button>
+                    <button onClick={() => navigate('/contact')} className='cursor-pointer hover:text-blue-600'>Contact</button>
                 </div>
 
                 {/* Catagoris Link button*/}
                 <div className=' space-y-1'>
-                    <h3 className='text-xl font-bold'>Support</h3>
+                    <h3 className='text-xl font-bold text-white'>Support</h3>
                     <div className='space-y-1'>
                         <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
                         <p>exclusive@gmail.com</p>
@@ -60,7 +60,7 @@ function Footer() {
                 </div>
                 {/* Download App */}
                 <div className=' space-y-2'>
-                    <h3 className='text-xl font-bold'>Download App</h3>
+                    <h3 className='text-xl font-bold text-white'>Download App</h3>
                     <div className='space-y-2 flex gap-2'>
                         <img className='cursor-pointer' src="/icons/qr-code.png" alt="Logo" />
                         <div className='flex flex-col gap-3'>
@@ -69,10 +69,10 @@ function Footer() {
                         </div>
                     </div>
                     <div className='flex gap-5'>
-                        <FaFacebook className='hover:scale-125 hover:text-red-800 duration-300 cursor-pointer'/>
-                        <FaTwitter className='hover:scale-125 hover:text-red-800 duration-300 cursor-pointer'/>
-                        <FaInstagram className='hover:scale-125 hover:text-red-800 duration-300 cursor-pointer'/>
-                        <FaLinkedin className='hover:scale-125 hover:text-red-800 duration-300 cursor-pointer'/>
+                        <FaFacebook className='hover:scale-125 hover:text-blue-600 duration-300 cursor-pointer' />
+                        <FaTwitter className='hover:scale-125 hover:text-blue-600 duration-300 cursor-pointer' />
+                        <FaInstagram className='hover:scale-125 hover:text-blue-600 duration-300 cursor-pointer' />
+                        <FaLinkedin className='hover:scale-125 hover:text-blue-600 duration-300 cursor-pointer' />
                     </div>
                 </div>
 

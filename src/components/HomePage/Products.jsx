@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toggleFavorite } from "../../Redux/favoriteSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { IoIosHeartEmpty, IoMdHeart } from "react-icons/io";
 
-function Products({ addToFavorite }) {
+function Products() {
   const [products, setProducts] = useState([]);
-  const [favorites, setFavorites] = useState([]);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { items } = useSelector((state) => state.favorites);
 
-  const handleFavoriteClick = (e, pro) => {
-    e.stopPropagation();
-    if (favorites.includes(pro.id)) {
-      setFavorites(favorites.filter((id) => id !== pro.id));
-    } else {
-      setFavorites([...favorites, pro.id]);
-      addToFavorite && addToFavorite(pro);
-    }
-  };
+
 
   //  JSON data 
   useEffect(() => {
@@ -51,37 +47,38 @@ function Products({ addToFavorite }) {
 
       {/* Product Grid Area */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 mt-3">
-        {products.map((pro) => (
-          <div
-            key={pro.id}
-            className="bg-gray-100 rounded-2xl border border-gray-300 cursor-pointer hover:shadow-lg hover:-translate-y-1 transition duration-300"
-            onClick={() => navigate(`/product/${pro.id}`)}>
-            <div className="w-full">
-              <img className="w-full h-full object-cover rounded-t-2xl"
-                src={pro.thumbnail} alt={pro.title} />
-            </div>
+        {products.map((pro) => {
+          const isFav = items.some((fav) => fav.id === pro.id);
+          return (
+            <div
+              key={pro.id}
+              className="bg-gray-100 rounded-2xl border border-gray-300 cursor-pointer hover:shadow-lg hover:-translate-y-1 transition duration-300"
+              onClick={() => navigate(`/product/${pro.id}`)}>
+              <div className="w-full">
+                <img className="w-full h-full object-cover rounded-t-2xl"
+                  src={pro.thumbnail} alt={pro.title} />
+              </div>
 
-            <div className="p-2">
-              <p>{pro.title.slice(0, 15)}</p>
-              <div className="flex justify-between items-center">
-                <p>${pro.price}</p>
+              <div className="p-2">
+                <p>{pro.title.slice(0, 15)}</p>
+                <div className="flex justify-between items-center">
+                  <p>${pro.price}</p>
 
-                {/* ❤️ Favorite Button */}
-                <button onClick={(e) => handleFavoriteClick(e, pro)}
-                  style={{
-                    fontSize: "22px",
-                    cursor: "pointer",
-                    color: favorites.includes(pro.id) ? "black" : "red",
-                    background: "transparent",
-                    border: "none",
-                    transition: "0.3s"
-                  }}>
-                  <img className="w-5 h-5" src="/icons/love-icon.png" alt="" />
-                </button>
+                  {/* ❤️ Favorite Button */}
+                  <button onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dispatch(toggleFavorite(pro));
+                  }} className="hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div className="bg-black w-6 h-6 rounded-full flex justify-center items-center">
+                      {isFav ? <IoMdHeart className="text-red-600"/> : <IoIosHeartEmpty className="text-white"/>}
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
 
     </section>

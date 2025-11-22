@@ -58,7 +58,7 @@ export default function Cart() {
                                     <Link to="/singlecheckout">
                                         <button
                                             onClick={() => dispatch(setSelectedProduct(item))}
-                                            className="px-4 py-1 bg-[#EA5326] hover:bg-amber-700 text-white rounded cursor-pointer">
+                                            className="px-4 py-1 bg-[#EA5326] hover:bg-amber-700 text-white rounded-full cursor-pointer">
                                             Checkout🛍️
                                         </button>
                                     </Link>
@@ -73,7 +73,7 @@ export default function Cart() {
                         <h2 className="text-xl font-bold">Total Items: {totalQuantity}</h2>
                         <h2 className="text-xl font-bold">Total Price: ${totalPrice.toFixed(2)}</h2>
                         <Link to="/allcheckout">
-                            <button className="mt-2 bg-green-600 hover:bg-green-700 hover:scale-95 duration-300 text-white px-5 py-2 rounded cursor-pointer">
+                            <button className="mt-2 bg-green-600 hover:bg-green-700 hover:scale-95 duration-300 text-white px-5 py-2 rounded-full cursor-pointer">
                                 Checkout All 🛍️
                             </button>
                         </Link>

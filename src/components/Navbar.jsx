@@ -67,23 +67,22 @@ function Navbar() {
           </div>
 
           {/* 🔹 Right Icons */}
+          {/* Favorite Icon */}
           <div className="hidden md:flex gap-4 items-center relative">
-            <NavLink to="/account" className="hover:text-pink-500">
+            <NavLink to="/favorite" className="hover:text-pink-500">
               <FiHeart className="hover:scale-110 duration-300" />
             </NavLink>
-
+            {/* Cart Icon */}
             <NavLink to="/cart" className="hover:text-pink-500 relative">
               <FaCartArrowDown className="hover:scale-110 duration-300" />
               <span className="absolute -top-2 -right-2 bg-red-600 text-white text-[8px] px-1 rounded-full">
                 {totalQuantity}
               </span>
             </NavLink>
-
             {/* 🔹 Profile Icon */}
             <button
               onClick={() => setProfileOpen(true)}
-              className="hover:text-pink-500"
-            >
+              className="hover:text-pink-500">
               <CiUser className="hover:scale-110 duration-300" />
             </button>
           </div>

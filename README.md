@@ -1,12 +1,92 @@
-# React + Vite
+# Chez Tati — Restaurant Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive restaurant website built using **HTML, CSS (Tailwind)**, and **JavaScript**. The website showcases menu items, restaurant details, customer testimonials, and an elegant reservation/contact system.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+*(https://cheztati.netlify.app/)*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+
+## ✨ Features
+
+* Fully **responsive** modern restaurant UI
+* **Hero section** with elegant visuals
+* **Menu page** with categories & item cards
+* **About page** with restaurant story
+* **Accout page** with Login Logout or Desboard
+* **Reservation / Contact form**
+* Smooth scroll, animations, and clean layout
+* SEO-friendly structure
+
+---
+
+## 🛠️ Technologies Used
+
+* **HTML5**
+* **React.js**
+* **Tailwind CSS / Custom CSS**
+* **JavaScript (Vanilla)**
+* **React Icons / Icons**
+
+---
+
+## 🔧 Installation & Setup
+
+1. Clone the repository:
+
+```
+git clone https://github.com/nur637788/Chez-Tati-Website
+```
+
+2. Go into the folder:
+
+```
+cd folder
+```
+
+3. Open with VS Code:
+
+```
+code .
+```
+
+4. Run using Live Server or open `index.html` directly.
+
+---
+
+## 📸 Screenshots
+
+(Add homepage, menu, about, contact screenshots here)
+
+---
+
+## 📈 SEO Optimization
+
+Project includes:
+
+* Meta tags
+* Open Graph preview
+* Mobile-friendly viewport
+* Semantic HTML structure
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you want to change.
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+### 👨‍🍳 Developed for **Chez Tati Restaurant Website**
+
+Crafted with ❤️ and clean code.

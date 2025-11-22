@@ -2,6 +2,8 @@ import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "../Redux/CartSlice"
 import favoriteReducer from "../Redux/favoriteSlice";
 import authReducer from '../Redux/authSlice'
+import profileReducer from '../Redux/profileSlice'
+
 
 
 export const store = configureStore({
@@ -9,6 +11,7 @@ export const store = configureStore({
         cart: cartReducer,
         favorites: favoriteReducer,
         auth: authReducer,
+        profile: profileReducer,
 
     },
 });
