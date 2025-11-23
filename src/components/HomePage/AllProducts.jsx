@@ -42,9 +42,9 @@ function AllProducts() {
 
     return (
         <div id='up'>
-            <div className='flex -mt-4'>
+            <div className='flex gap-2 -mt-4'>
                 {/* ---------Side bar----------- */}
-                <div className='w-30 md:w-50 py-5 pl-1 '>
+                <div className='w-35 md:w-50 py-5 '>
                     {/* ----- Search bar ------ */}
                     <input type="search" value={search}
                         onChange={(e) => setSearch(e.target.value)} placeholder='Search' className='px-2 border border-gray-300 rounded w-30 md:w-45' />
@@ -53,8 +53,7 @@ function AllProducts() {
                     <div className="mt-5 text-[10px] md:text-base">
                         <button
                             onClick={() => setOpen(!open)}
-                            className="font-bold"
-                        >
+                            className="font-bold">
                             {selected ? selected : "All Category"}
                         </button>
 
@@ -83,7 +82,7 @@ function AllProducts() {
                 </div>
 
                 {/* --------Main Products Area ------------ */}
-                <div className='px-5 py-5'>
+                <div className=' py-5'>
                     {/* ====== Header Sorting and length ======= */}
                     <div className='flex justify-between'>
                         <div className='flex gap-1'>
@@ -133,23 +132,21 @@ function AllProducts() {
                                         <img className="w-full h-full object-cover rounded-t-2xl"
                                             src={pro?.thumbnail} alt={pro.title} />
                                     </div>
-
-                                    <div className="p-2 flex justify-between items-center gap-4 ">
-                                        <div>
-                                            <p>{pro.title.slice(0, 15)}</p>
+                                    <div className='p-2'>
+                                        <p>{pro.title.slice(0, 15)}</p>
+                                        <div className="flex justify-between items-center">
                                             <p>${pro.price}</p>
+                                            {/* ===== Cart Button ====== */}
+                                            <button onClick={(e) => {
+                                                e.preventDefault();
+                                                e.stopPropagation();
+                                                dispatch(addToCart(pro));
+                                            }}>
+                                                <Link className='bg-gray-200 h-8 w-8 flex items-center justify-center rounded-full border border-red-100 hover:scale-105 duration-300'>
+                                                    <FiShoppingCart />
+                                                </Link>
+                                            </button>
                                         </div>
-                                        {/* ===== Cart Button ====== */}
-                                        <button onClick={(e) => {
-                                            e.preventDefault();
-                                            e.stopPropagation();
-                                            dispatch(addToCart(pro));
-                                        }}>
-                                            <Link className='bg-gray-200 h-10 w-10 flex items-center justify-center rounded-full border border-red-100 hover:scale-105 duration-300'>
-                                                <FiShoppingCart />
-                                            </Link>
-                                        </button>
-
                                     </div>
                                 </div>
                             )

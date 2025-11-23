@@ -114,20 +114,22 @@ function Navbar() {
 
               {/* Icons inside mobile menu */}
               <div className="flex gap-4 mt-4">
-                <NavLink to="/account" onClick={handleMobileLinkClick}>
+                <NavLink to="/favorite" onClick={handleMobileLinkClick}>
                   <FiHeart className="hover:scale-110 duration-300" />
                 </NavLink>
 
                 <NavLink to="/cart" onClick={handleMobileLinkClick}>
                   <FaCartArrowDown className="hover:scale-110 duration-300" />
+                  <span className="absolute top-[84%] left-15 bg-red-600 text-white text-[8px] px-1 rounded-full">
+                    {totalQuantity}
+                  </span>
                 </NavLink>
 
                 <button
                   onClick={() => {
                     handleMobileLinkClick();
                     setProfileOpen(true);
-                  }}
-                >
+                  }}>
                   <CiUser className="hover:scale-110 duration-300" />
                 </button>
               </div>

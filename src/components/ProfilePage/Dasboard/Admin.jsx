@@ -30,7 +30,7 @@ export default function Admin() {
     };
 
     // 🔒 Login না থাকলে login form দেখাও
-    if (!loggedIn) {
+    if (!loggedIn)  {
         return (
             <div className="flex flex-col items-center justify-center min-h-screen -mt-20">
                 <h1 className="text-2xl font-bold mb-4">Admin Login</h1>

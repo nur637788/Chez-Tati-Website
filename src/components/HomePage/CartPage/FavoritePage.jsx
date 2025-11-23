@@ -36,7 +36,7 @@ export default function FavoritePage() {
                                     ❤️
                                 </button>
 
-                                <h2 className="font-bold text-lg mt-2">{item.title.slice(0, 22)}</h2>
+                                <h2 className="font-bold text-lg mt-2">{item.title.slice(0, 15)}</h2>
                                 <p className="opacity-80">Price: ${item.price}</p>
                             </div>
                         </Link>
