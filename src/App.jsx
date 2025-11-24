@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import Layout from "./components/Layout";
+import ErrorPage from "./components/ErrorPage";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -32,11 +33,11 @@ import ReviewPage from "./components/ProfilePage/ReviewPage";
 
 
 function App() {
-
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
+      errorElement: <ErrorPage />,
       children: [
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
@@ -55,13 +56,13 @@ function App() {
         { path: "/allcheckout", element: <ProtectedRoute> <AllCheckout /> </ProtectedRoute> },
         // Profile or Account
         { path: "/profile", element: <Profile /> },
-        { path: "/editprofile", element: <EditProfile /> },
-        { path: "/review", element: <ReviewPage /> },
+        { path: "/editprofile", element: <ProtectedRoute> <EditProfile /> </ProtectedRoute> },
+        { path: "/review", element: <ProtectedRoute><ReviewPage /> </ProtectedRoute> },
         { path: "/login", element: <Login /> },
         { path: "/register", element: <Register /> },
         { path: "/forgetpass", element: <ForgetPass /> },
         { path: "/newpass", element: <NewPass /> },
-        { path: "/admin", element: <Admin /> },
+        { path: "/admin", element: <ProtectedRoute> <Admin /> </ProtectedRoute> },
         // Footer Link
         { path: "/privacypolicy", element: <PrivacyPolicy /> },
         { path: "/admin", element: <Admin /> },

@@ -1,6 +1,6 @@
 # Chez Tati — Restaurant Website
 
-A modern, responsive restaurant website built using **HTML, CSS (Tailwind)**, and **JavaScript**. The website showcases menu items, restaurant details, customer testimonials, and an elegant reservation/contact system.
+A modern, responsive restaurant website built using **HTML, CSS (Tailwind)**, **JavaScript** and **JavaScript**. The website showcases menu items, restaurant details, customer testimonials, and an elegant reservation/contact system.
 
 ---
 
@@ -13,7 +13,7 @@ A modern, responsive restaurant website built using **HTML, CSS (Tailwind)**, an
 
 ## ✨ Features
 
-* Fully **responsive** modern restaurant UI
+* Fully **responsive** modern Chez-Tati Website UI
 * **Hero section** with elegant visuals
 * **Menu page** with categories & item cards
 * **About page** with restaurant story
@@ -31,6 +31,8 @@ A modern, responsive restaurant website built using **HTML, CSS (Tailwind)**, an
 * **Tailwind CSS / Custom CSS**
 * **JavaScript (Vanilla)**
 * **React Icons / Icons**
+* **Redux-toolkit / Redux**
+
 
 ---
 

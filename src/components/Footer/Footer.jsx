@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import { AiOutlineApple } from 'react-icons/ai';
-import { BsQrCode } from 'react-icons/bs';
-import { FaFacebook, FaGooglePlay, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Footer() {
@@ -18,7 +16,9 @@ function Footer() {
             <div data-aos='fade-up' className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4  justify-between px-5 md:px-20 py-5 space-x-5'>
                 {/* Company Logo */}
                 <div className='space-y-1'>
-                    <img className='cursor-pointer h-12' src="/icons/footer-logo.png" alt="Logo" />
+                    <Link to='/'>
+                        <img className='cursor-pointer h-12' src="/icons/footer-logo.png" alt="Logo" />
+                    </Link>
                     <p className='text-sm'>Ecommerce is a free UI Kit from Paperpillar that you</p>
                     <div className='flex flex-col gap-2'>
                         <form onSubmit={handleLogin}>

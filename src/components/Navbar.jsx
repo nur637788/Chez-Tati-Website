@@ -25,7 +25,9 @@ function Navbar() {
 
           {/* 🔹 Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
-            <img className="h-10" src="/icons/logo.png" alt="logo" />
+            <NavLink to='/'>
+              <img className="h-10" src="/icons/logo.png" alt="logo" />
+            </NavLink>
           </div>
 
           <div className="flex gap-5">
