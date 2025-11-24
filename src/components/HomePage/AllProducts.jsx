@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { CiHeart } from 'react-icons/ci';
 import { FiShoppingCart } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../Redux/CartSlice'

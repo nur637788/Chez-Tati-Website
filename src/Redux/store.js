@@ -3,7 +3,7 @@ import cartReducer from "../Redux/CartSlice"
 import favoriteReducer from "../Redux/favoriteSlice";
 import authReducer from '../Redux/authSlice'
 import profileReducer from '../Redux/profileSlice'
-
+import searchReducer from "../Redux/searchSlice";
 
 
 export const store = configureStore({
@@ -12,6 +12,7 @@ export const store = configureStore({
         favorites: favoriteReducer,
         auth: authReducer,
         profile: profileReducer,
+        search: searchReducer,
 
     },
 });

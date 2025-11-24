@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { FaCartArrowDown } from "react-icons/fa";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { FiHeart } from "react-icons/fi";
 import { CiUser } from "react-icons/ci";
 import Profile from "./ProfilePage/Profile";
+import { setSearchQuery } from "../Redux/searchSlice.js";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
 
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-
-  // 🔹 Mobile menu link clicked → close menu
+  const search = useSelector((state) => state.search.query);
+  const dispatch = useDispatch();
+  //  Mobile menu link clicked → close menu
   const handleMobileLinkClick = () => {
     setMenuOpen(false);
   };
@@ -23,7 +25,7 @@ function Navbar() {
       <div className="bg-white shadow-sm">
         <div className="flex justify-between items-center px-5 md:px-10 xl:px-20 py-3">
 
-          {/* 🔹 Logo */}
+          {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
             <NavLink to='/'>
               <img className="h-10" src="/icons/logo.png" alt="logo" />
@@ -33,7 +35,7 @@ function Navbar() {
           <div className="flex gap-5">
             {/* ----main search bar----- */}
             <div className="border border-gray-300 rounded-full hidden md:block">
-              <input type="search" id="search" placeholder="search" className=" focus:ring-0 focus:outline-none pl-3" />
+              <input type="search" id="search" placeholder="search" value={search} onChange={(e) => dispatch(setSearchQuery(e.target.value))} className=" focus:ring-0 focus:outline-none pl-3" />
               <label htmlFor="search" className="bg-[#EA5326] px-2 rounded-r-full py-[2px] text-white">search</label>
             </div>
 
